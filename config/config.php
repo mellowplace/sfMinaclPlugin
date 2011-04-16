@@ -30,3 +30,7 @@
  */
 require_once(realpath(dirname(__FILE__)) . '/../minacl/lib/form/phLoader.php');
 phLoader::registerAutoloader();
+/*
+ * tell Minacl where it can find the form templates for this project
+ */
+phViewLoader::setInstance(new phFileViewLoader(sfConfig::get('sf_lib_dir') . '/form/minacl/view'));

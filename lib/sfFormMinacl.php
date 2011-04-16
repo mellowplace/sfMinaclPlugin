@@ -22,15 +22,85 @@
  */
 
 /**
- * Base form class that all Symfony generated Minacl forms will extend 
+ * Base form class that all Symfony generated Minacl forms will extend
  *
  * @author Rob Graham <htmlforms@mellowplace.com>
  * @package sfMinaclPlugin
  */
-class sfFormMinacl extends phForm
+abstract class sfFormMinacl extends phForm
 {
-	public function postInitialize()
+	/**
+	 * The model class this form is for
+	 *
+	 * @var object
+	 */
+	protected $object = null;
+
+	public function __construct($name, $template, $object = null)
 	{
+
+		$class = $this->getModelName();
+		if (!$object)
+		{
+			$this->object = new $class();
+		}
+		else
+		{
+			if (!$object instanceof $class)
+			{
+				throw new sfException(sprintf('The "%s" form only accepts a "%s" object.', get_class($this), $class));
+			}
+
+			$this->object = $object;
+		}
 		
-	} 
+		parent::__construct($name, $template);
+	}
+
+	/**
+	 * returns the class of the model that this form is dealing with
+	 * @return string
+	 */
+	public abstract function getModelName();
+
+	/**
+	 * Gets the object that this form deals with
+	 */
+	public function getObject()
+	{
+		return $this->object;
+	}
+	
+	/**
+	 * @return boolean if there is file uploads on this form then it is a multipart form
+	 */
+	public function isMultipart()
+	{
+		/*
+		 * go through all our subforms, if one of them is a multipart
+		 * then that makes us a multipart
+		 */
+		$subForms = $this->_forms;
+		foreach($subForms as $f)
+		{
+			if($f instanceof sfFormMinacl && $f->isMultipart())
+			{
+				return true;
+			}
+		}
+		/*
+		 * got through all data items, if one of them is file data then we
+		 * are multipart
+		 */
+		$dataItems = $this->_view->getAllData();
+		foreach($dataItems as $i)
+		{
+			if($i instanceof phFileFormDataItem)
+			{
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }

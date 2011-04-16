@@ -1,0 +1,3 @@
+[submodule "minacl-full"]
+	path = minacl-full
+	url = git@github.com:mellowplace/PHP-HTML-Driven-Forms.git
