@@ -28,5 +28,5 @@
  * @author Rob Graham <htmlforms@mellowplace.com>
  * @package sfMinaclPlugin
  */
-require_once(realpath(dirname(__FILE__)) . '/minacl/lib/form/phLoader.php');
+require_once(realpath(dirname(__FILE__)) . '/../minacl/lib/form/phLoader.php');
 phLoader::registerAutoloader();
