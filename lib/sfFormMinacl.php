@@ -58,12 +58,6 @@ abstract class sfFormMinacl extends phForm
 	}
 
 	/**
-	 * returns the class of the model that this form is dealing with
-	 * @return string
-	 */
-	public abstract function getModelName();
-
-	/**
 	 * Gets the object that this form deals with
 	 */
 	public function getObject()
@@ -103,4 +97,46 @@ abstract class sfFormMinacl extends phForm
 		
 		return false;
 	}
+	
+	/**
+	 * Saves the model class
+	 * @return object the saved model
+	 */
+	public function save()
+	{
+		if(!$this->isValid())
+		{
+			throw new phFormException('The form is not valid so you cannot save the Propel model');
+		}
+		
+		/*
+		 * update the object with the current form values and then
+		 * save this model class
+		 */
+		$this->doUpdateObject($this->getValue());
+		return $this->saveObject();
+	}
+	
+	/**
+	 * returns the class of the model that this form is dealing with
+	 * @return string
+	 */
+	public abstract function getModelName();
+	
+	/**
+	 * Updates the model object from $values
+	 * @param array $values
+	 */
+	protected abstract function doUpdateObject($values);
+	
+	/**
+	 * Updates the form values from the model
+	 */
+	protected abstract function updateDefaultsFromObject();
+	
+	/**
+	 * Saves the model class
+	 * @return object the saved model
+	 */
+	protected abstract function saveObject();
 }
