@@ -102,8 +102,13 @@ abstract class sfFormMinacl extends phForm
 	 * Saves the model class
 	 * @return object the saved model
 	 */
-	public function save()
+	public function save($con = null)
 	{
+		if (null === $con)
+    	{
+    		$con = $this->getConnection();
+    	}
+    	
 		if(!$this->isValid())
 		{
 			throw new phFormException('The form is not valid so you cannot save the Propel model');
@@ -114,7 +119,7 @@ abstract class sfFormMinacl extends phForm
 		 * save this model class
 		 */
 		$this->doUpdateObject($this->getValue());
-		return $this->saveObject();
+		return $this->saveObject($con);
 	}
 	
 	/**
@@ -137,6 +142,12 @@ abstract class sfFormMinacl extends phForm
 	/**
 	 * Saves the model class
 	 * @return object the saved model
+	 * @param mixed $con a database connection
 	 */
-	protected abstract function saveObject();
+	protected abstract function saveObject($con);
+	
+	/**
+	 * @return mixed a database connection
+	 */
+	protected abstract function getConnection();
 }
