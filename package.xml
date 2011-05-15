@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfMinaclPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>Provides the Minacl form framework for Symfony</summary>
+ <description>See http://minacl.org for details</description>
+ <lead>
+  <name>Rob Graham</name>
+  <user>mellowplace</user>
+  <email>html-forms@mellowplace.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-05-15</date>
+ <time>13:16:10</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+Uses Minacl 0.9.3 alpha
+ </notes>
+ <contents>
+  <dir baseinstalldir="sfMinaclPlugin" name="/">
+   <file baseinstalldir="sfMinaclPlugin" md5sum="cd82b16c2a90f706ad8d38954358e378" name="config/config.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="29e2c18d4f0f4d6130f5283740da3088" name="lib/sfFormMinacl.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="96ba3a738d645250c6aba91133ec9e28" name="minacl/CHANGELOG.md" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="d282c9325b825ab490d33bf0402b4a07" name="minacl/generatePackage.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e6a600fd5e1d9cbde2d983680233ad02" name="minacl/LICENSE" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="9d16a36026cbaacd92109e5eb6bfaba0" name="minacl/README" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e6a600fd5e1d9cbde2d983680233ad02" name="minacl/lib/form/LICENSE" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="bf33c041b48cb470b56fe1acd8a9449e" name="minacl/lib/form/phForm.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="705b013f8cdce9d51f7e68f593b82e9a" name="minacl/lib/form/phFormException.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="3636c6f16fa926671326bfa86aeeed87" name="minacl/lib/form/phFormViewElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="c6a1662fed4f100d7ea522aea6073bf2" name="minacl/lib/form/phLoader.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="a4091d454a8c98b52c779ae6750534d6" name="minacl/lib/form/phValidatable.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="9d16a36026cbaacd92109e5eb6bfaba0" name="minacl/lib/form/README" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="63e6e9f74be47157c0b47fe764dbf7e7" name="minacl/lib/form/data/phArrayFormDataItem.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="0a52ea9216cfa289811575a3dd3e5701" name="minacl/lib/form/data/phData.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="8f2c11d08fb8da2cf0ab2f6ce4e34b9a" name="minacl/lib/form/data/phDataChangeListener.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e0503bfb4f39e3c8f9a6bfb3aaee44e1" name="minacl/lib/form/data/phFileDataException.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="d34c096c5144906cb5da406a2f063863" name="minacl/lib/form/data/phFileFormDataItem.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="909e3980c0ddbb1da94216bb53a2c5e5" name="minacl/lib/form/data/phFormDataItem.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e81935064d5c97f72cd78c0a7f31fad9" name="minacl/lib/form/data/phSimpleArrayDataItem.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="9f2ab820c24b2140e0b8853e3aba9bbd" name="minacl/lib/form/data/collection/phAbstractFindingCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="d399fd437660901093d073d1ecbdee39" name="minacl/lib/form/data/collection/phCheckboxDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="9a751565358403a6ef3c80258108b358" name="minacl/lib/form/data/collection/phCompositeDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="1c95d8ab96f655505b5332d925219d6f" name="minacl/lib/form/data/collection/phDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="0c8dc75eb39f4575b7f4d028b113c4d3" name="minacl/lib/form/data/collection/phFileDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="8d6cf2a6479beccfe8be2950d9324a06" name="minacl/lib/form/data/collection/phFormDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="87f014a384f725a17da39818f6cf346b" name="minacl/lib/form/data/collection/phRadioDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="52515f72d4321391b95a41a560767f33" name="minacl/lib/form/data/collection/phSelectListDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="212f96dbc400e58ba229e918d7c12453" name="minacl/lib/form/data/collection/phSimpleArrayDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="cf9ab5d73ffbaec02096e83ae759ae84" name="minacl/lib/form/data/collection/phSimpleDataCollection.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="839161e540fdad2e2dd174d33c4b5c11" name="minacl/lib/form/dtd/xhtml-entities.ent" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="1c00cfda73190c1b5b2fecf49cee75b3" name="minacl/lib/form/element/phCheckableElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="5909f1e5e205268068ff5f31bfdcf98c" name="minacl/lib/form/element/phCheckboxElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="c961f1a7094e0d4c5d0db1c4b053070f" name="minacl/lib/form/element/phFileElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="fbb4c4ec375ccbfadd6b88853b0fd7bc" name="minacl/lib/form/element/phInputElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="31c91a0c5a90fccb0b1bd0065edb1484" name="minacl/lib/form/element/phRadioButtonElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e85f4a47256416a8c5b1098382e68405" name="minacl/lib/form/element/phSelectListElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="81f31f42771d24703f7483caa35cc4c4" name="minacl/lib/form/element/phSimpleXmlElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="dad5ca83b755902ca5437d35a254d4d4" name="minacl/lib/form/element/phTextAreaElement.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e73431de4fbf1f9d03e08a77c2dada59" name="minacl/lib/form/factory/phCheckboxElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="3ead6376b5ae4f6b23966142c19dd970" name="minacl/lib/form/factory/phElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="5cd4b5b98634092bff1d49fe11d45c4b" name="minacl/lib/form/factory/phFileElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="fef4be311abaf4188e33e7ba26f29616" name="minacl/lib/form/factory/phFormElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="7ed7c30083f285f54b9072ab11fb6999" name="minacl/lib/form/factory/phInputElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="a866610e81723b39fa7534cd14714e19" name="minacl/lib/form/factory/phRadioButtonElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="348fe65b5917bde3633771056289f816" name="minacl/lib/form/factory/phSelectListElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="b7d447c4cbb4a48d83e4cedd7b34f42e" name="minacl/lib/form/factory/phTextAreaElementFactory.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="9c35d461770c3248516e0e14e675edb0" name="minacl/lib/form/validator/phCompareValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="0d8acf264e9498b7570abc3ebc62cdfe" name="minacl/lib/form/validator/phEmailValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="cdfab630327fb7aecb4bb5820496dc03" name="minacl/lib/form/validator/phFileValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="801d4a5d44ee032cd76912594ee92d83" name="minacl/lib/form/validator/phNumericValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="bdca046f3d9a55d9dd2b094fd8912a5c" name="minacl/lib/form/validator/phRequiredValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="7e98563eb170e16e0264842a86a28da2" name="minacl/lib/form/validator/phStringLengthValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="52a7fb4fb1e5ba975ead6154e20d1e8d" name="minacl/lib/form/validator/phValidator.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="2f3557358cf04dcdb0247df64170f5a1" name="minacl/lib/form/validator/phValidatorCommon.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="cec7a5cab1690053608ae1a565e93e51" name="minacl/lib/form/validator/phValidatorError.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="8c6d391021aa9a84e94228b3f7f6c494" name="minacl/lib/form/validator/phValidatorException.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="51ec56cc65e7d7b36df2ea0b7f695e90" name="minacl/lib/form/validator/phValidatorLogic.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="ceacd49afc339b1ae113b21e8054bc79" name="minacl/lib/form/view/phArrayInfo.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="023d0fb043644e88228ac43dbdc799b0" name="minacl/lib/form/view/phFileViewLoader.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="d53c2f9ab379d4e3540a965812133dc4" name="minacl/lib/form/view/phFormView.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="cbe77053746257c65ef0ccb0343fda3c" name="minacl/lib/form/view/phNameInfo.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="2781a30dc00a7d3f7d7b1550d47bcec1" name="minacl/lib/form/view/phViewLoader.php" role="php" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e6a600fd5e1d9cbde2d983680233ad02" name="LICENSE" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="e6a600fd5e1d9cbde2d983680233ad02" name="LICENSE.Minacl" role="data" />
+   <file baseinstalldir="sfMinaclPlugin" md5sum="985f1d48d887b84eae9fd23d5c1c9340" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.0.0</min>
+    <max>1.5.0</max>
+    <exclude>1.5.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-05-14</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Uses Minacl 0.9.3 alpha
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-05-14</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Fixed bad dependency
+   </notes>
+  </release>
+ </changelog>
+</package>
